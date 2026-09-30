@@ -2,12 +2,18 @@ import streamlit as st
 import requests
 from dotenv import load_dotenv
 import os
+from pathlib import Path
 
 load_dotenv()
 
 API_KEY = os.getenv('WEATHER_API_KEY') 
 
 st.set_page_config(page_title='Weather App',page_icon="🌤️")
+
+css_file = Path(__file__).parent / "app.css"
+
+with open(css_file) as f:
+    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 st.title('Wheather App 🌤️')
 
