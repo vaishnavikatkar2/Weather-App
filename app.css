@@ -1,0 +1,169 @@
+/* ---------- Main Background ---------- */
+
+.stApp {
+    background:
+        linear-gradient(rgba(5, 20, 55, 0.88), rgba(15, 10, 45, 0.92)),
+        url("https://images.unsplash.com/photo-1511497584788-876760111969");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/* ---------- Main Container ---------- */
+
+.block-container {
+    max-width: 900px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+
+/* ---------- Title ---------- */
+
+h1 {
+    text-align: center;
+    font-size: 3.2rem !important;
+    font-weight: 800 !important;
+    color: white !important;
+    letter-spacing: 1px;
+}
+
+
+/* ---------- Normal Text ---------- */
+
+.stMarkdown p {
+    color: #d8e5ff;
+}
+
+
+/* ---------- Text Input ---------- */
+
+.stTextInput > div > div > input {
+    background: rgba(10, 25, 60, 0.75) !important;
+    color: white !important;
+    border: 1px solid #4b8cff !important;
+    border-radius: 14px !important;
+    padding: 14px !important;
+    font-size: 17px !important;
+}
+
+.stTextInput input::placeholder {
+    color: #aabbd8 !important;
+}
+
+
+/* ---------- Button ---------- */
+
+.stButton > button {
+    background: linear-gradient(135deg, #2196f3, #7b3ff2) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 12px !important;
+    padding: 12px 25px !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    transition: 0.3s ease;
+}
+
+.stButton > button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(65, 120, 255, 0.45);
+}
+
+
+/* ---------- Success Message ---------- */
+
+.stAlert {
+    background: rgba(20, 180, 130, 0.25) !important;
+    border: 1px solid #20c997 !important;
+    border-radius: 14px !important;
+}
+
+
+/* ---------- Weather Heading ---------- */
+
+h2 {
+    color: white !important;
+    font-size: 2.2rem !important;
+    margin-top: 30px !important;
+}
+
+
+/* ---------- Weather Metric Cards ---------- */
+
+[data-testid="stMetric"] {
+    background: rgba(20, 40, 90, 0.65);
+    border: 1px solid rgba(100, 160, 255, 0.6);
+    border-radius: 18px;
+    padding: 20px;
+    min-height: 120px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+}
+
+
+/* ---------- Metric Label ---------- */
+
+[data-testid="stMetricLabel"] {
+    color: #cbd9ff !important;
+    font-size: 16px !important;
+}
+
+
+/* ---------- Metric Value ---------- */
+
+[data-testid="stMetricValue"] {
+    color: white !important;
+    font-size: 30px !important;
+    font-weight: 700 !important;
+}
+
+
+/* ---------- Columns ---------- */
+
+[data-testid="column"] {
+    padding: 8px;
+}
+
+
+/* ---------- Labels ---------- */
+
+label {
+    color: #dce7ff !important;
+    font-weight: 500 !important;
+}
+
+
+/* ---------- Streamlit Header ---------- */
+
+header {
+    background: transparent !important;
+}
+
+
+/* ---------- Mobile Responsive ---------- */
+
+@media (max-width: 700px) {
+
+    .block-container {
+        padding: 2rem 1rem;
+    }
+
+    h1 {
+        font-size: 2.3rem !important;
+    }
+
+    h2 {
+        font-size: 1.7rem !important;
+    }
+
+    [data-testid="stMetric"] {
+        padding: 15px;
+    }
+
+    [data-testid="stMetricValue"] {
+        font-size: 24px !important;
+    }
+}
