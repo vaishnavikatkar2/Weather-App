@@ -44,3 +44,13 @@ if(st.button('Fetch Weather data')):
         col4.metric('Condition',f'{condition}🌧️')
     else :
         st.error('Invalid city name')
+
+# footer
+st.markdown(
+    """
+    <div class="footer">
+    © 2026 Vaishnavi Katkar · Weather Application
+    </div>
+    """,
+    unsafe_allow_html=True
+)       
